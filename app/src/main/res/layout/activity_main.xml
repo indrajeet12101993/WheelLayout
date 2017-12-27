@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="retrofit.com.wheellayout.MainActivity">
+
+    <github.hellocsl.cursorwheel.CursorWheelLayout
+        android:id="@+id/test_circle_menu_right"
+        android:layout_marginTop="5dp"
+        android:layout_width="230dip"
+        android:layout_height="230dip"
+        android:layout_centerHorizontal="true"
+        app:wheelItemRotateMode="none"
+
+        app:wheelBackgroundColor="@color/primary_text_drak"
+        app:wheelCursorColor="@color/red"
+        app:wheelCursorHeight="20dip"
+       
+        app:wheelSelectedAngle="270">
+
+       <TextView
+           style="@style/TextAppearance.AppCompat.Large.Inverse"
+          android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="text wheel"
+
+           android:textColor="#ffffff"
+           android:textSize="12sp"
+           android:id="@id/id_wheel_menu_center_item"/>
+    </github.hellocsl.cursorwheel.CursorWheelLayout>
+    <github.hellocsl.cursorwheel.CursorWheelLayout
+        android:id="@+id/test_circle_menu_right_imgage"
+        android:layout_below="@+id/test_circle_menu_right"
+        android:layout_width="230dip"
+        android:layout_height="230dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+
+app:wheelItemRotateMode="none"
+        app:wheelBackgroundColor="@color/primary_text_drak"
+        app:wheelCursorColor="@color/red"
+        app:wheelCursorHeight="20dip"
+
+        app:wheelSelectedAngle="270">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Large.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="image  wheel"
+
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:id="@id/id_wheel_menu_center_item"/>
+    </github.hellocsl.cursorwheel.CursorWheelLayout>
+
+</RelativeLayout>
